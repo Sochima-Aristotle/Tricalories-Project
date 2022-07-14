@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css", integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM", crossorigin="anonymous")> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"> -->
+    <!-- <script src="https://kit.fontawesome.com/4218507e9a.js" crossorigin="anonymous"></script> -->
+    <title>Calorie Project </title>
+</head>
+<body>
+
+    <nav class="nav-wrapper black">
+        <div class="container">
+            <a href="#" class="brand-logo center">Tracalorie</a>
+            <ul class="right">
+                <li><a href="#" class="clear-btn btn grey darken-4">Clear all</a></li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Add meal /food item</span>
+                <form class="col">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" id="item-name" placeholder="Add item">
+                            <label for="item-name">Meal</label>
+                        </div>
+                        
+                        <div class="input-field col s6">
+                            <input type="number" id="item-calories" placeholder="Add calorries">
+                            <label for="item-calories">Calories</label>
+                        </div>
+                        <button class="btn add-btn grey darken-2"><i class="fa fa-plus"></i> Add Meal</button>
+                        <button class="btn update-btn green darken-2"><i class="fa fa-pencil-square-o"></i> Update Meal</button>
+                        <div class="secondary-content">
+
+                            <button class="btn delete-btn red darken-2 center-align pt-2"><i class="fa-solid fa-xmark"></i> Delete Meal</button> 
+                            <button class="btn back-btn pink lighten-2 pull-right "><i class="fa-solid fa-circle-chevron-left"></i> Back</button>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+        <h3 class="center-align">Total Calories: <span class="total-calories">0</span></h3>
+        <ul id="item-list" class="collection">
+            <!-- <li id="item-0" class="collection-item">
+                <strong>Steak Breakfast: </strong> <em>1200 calories</em>
+                <a href="#" class="secondary-content">
+                    <i class="edit-item fa-solid fa-pencil"></i>
+                </a>
+            </li>
+            <li id="item-0" class="collection-item">
+                <strong>Steak Lunch: </strong> <em>2000 calories</em>
+                <a href="#" class="secondary-content">
+                    <i class="edit-item fa-solid fa-pencil"></i>
+                </a>
+            </li>
+            <li id="item-0" class="collection-item">
+                <strong>Steak Dinner: </strong> <em>1500 calories</em>
+                <a href="#" class="secondary-content">
+                    <i class="edit-item fa-solid fa-pencil"></i>
+                </a>
+            </li> -->
+        </ul>
+    </div>
+    
+
+    <script src="https://kit.fontawesome.com/4218507e9a.js" crossorigin="anonymous"></script>
+    <script
+    
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
